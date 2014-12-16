@@ -18,13 +18,13 @@ console.timeEnd('generate random with set');
 
 console.time('generate random with brain');
 var testArr = [];
-for (var i = 0; i < 100000; i++) {
+for (var i = 0; i < 1000; i++) {
 	testArr[i] = i;
 }
 
-for (var i = 0; i < 100000; i++) {
+for (var i = 0; i < 1000; i++) {
 	var temp = testArr[i];
-	var randIndex = Math.round(Math.random() * 100000);
+	var randIndex = Math.round(Math.random() * 1000);
 
 	testArr[i] = testArr[randIndex];
 	testArr[randIndex] = temp;
