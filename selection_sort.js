@@ -1,3 +1,5 @@
+`// Сортировка выбором
+
 function selection_sort(array) {
 	var i = 0,
 		j,

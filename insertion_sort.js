@@ -1,3 +1,7 @@
+// Сортировка вставкой
+// каждый элемент массива меняем с предыдущим
+// до тех пор, пока предыдущий большей данного
+
 function insertion_sort(array) {
 	var i = 1,
 		j,
@@ -16,4 +20,4 @@ function insertion_sort(array) {
 	return array;
 }
 
-console.log(insertion_sort([3, 11, 2, 1, 1, 99, 45, 43, 42, 11]));
+console.log(insertion_sort([3, 11, 2, 1, 1, 99, 45, 43, 42, 11]))
