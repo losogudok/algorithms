@@ -20,6 +20,3 @@ function selection_sort(array) {
 
 	return array;
 }
-
-
-console.log(selection_sort([3, 11, 2, 1, 1, 99, 45, 43, 42, 11]));
