@@ -1,6 +1,8 @@
-`// Сортировка выбором
+// Сортировка выбором
+// На каждой итерации заменяем текущий элемент
+// с наименьшим справа от текущего
 
-function selection_sort(array) {
+function selectionSort(array) {
 	var i = 0,
 		j,
 		temp,
@@ -20,3 +22,5 @@ function selection_sort(array) {
 
 	return array;
 }
+
+module.exports = selectionSort;

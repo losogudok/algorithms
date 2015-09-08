@@ -1,6 +1,5 @@
 
 function createRandArray(max) {
-	console.time('create rand array');
 	var resultArr = [],
 		i;
 
@@ -16,7 +15,6 @@ function createRandArray(max) {
 		resultArr[randIndex] = temp;
 	}
 
-	console.timeEnd('create rand array');
 	return resultArr;
 }
 
