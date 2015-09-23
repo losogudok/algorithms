@@ -3,7 +3,6 @@ function BinarySearchTree() {
 }
 
 BinarySearchTree.prototype = {
-    constructor: BinarySearchTree,
     minimum() {
 
     },
@@ -30,9 +29,10 @@ BinarySearchTree.prototype = {
     },
 
     toArray: function(){
+        
     },
 
     toString: function(){
-    }
 
+    }
 };
