@@ -15,24 +15,49 @@ BinarySearchTree.prototype = {
     predecessor() {
 
     },
-    insert(value){
+    insert(node){
+	    var tmp;
+		var root = this.root;
+
+	    while(root !== undefined) {
+		    tmp = root;
+			if (node.key < root.key) {
+				root = root.left;
+			}
+		    else {
+				root = root.right;
+			}
+	    }
+	    node.parent = tmp;
+	    if (tmp === undefined) {
+		    this.root = node;
+	    }
+	    else if (node.key < tmp.key) {
+		    tmp.left = node;
+	    }
+	    else {
+		    tmp.right = node;
+	    }
+    },
+    remove(value){
 
     },
-    remove: function(value){
+    search(value){
 
     },
-    search: function(value){
-
-    },
-    size: function(){
-
+    size(){
+		return this.toArray().length;
     },
 
-    toArray: function(){
-        
+    toArray(root){
+	    root = root || this.root;
+	    if (root === undefined) {
+		    return [];
+	    }
+	    return this.toArray(root.left).concat(root, this.toArray(root.right));
     },
 
-    toString: function(){
-
+    toString(){
+		return this.toArray().join('');
     }
 };
