@@ -11,7 +11,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif"/>
 
 ###Слиянием
-Время работы O(n * lgn)
+Время работы в любом случае O(n * lgn)
 Большой постоянный множитель. Делает полную копию входного массива.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif"/>
