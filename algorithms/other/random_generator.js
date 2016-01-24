@@ -9,7 +9,7 @@ function createRandArray(max) {
 
 	for (i = 0; i < max; i++) {
 		var temp = resultArr[i];
-		var randIndex = Math.round(Math.random() * max);
+		var randIndex = Math.floor(Math.random() * max);
 
 		resultArr[i] = resultArr[randIndex];
 		resultArr[randIndex] = temp;
@@ -18,8 +18,9 @@ function createRandArray(max) {
 	return resultArr;
 }
 
-function createRandNumber(max, min) {
-	if (arguments.length !== 2) {
+function createRandNumber(min, max) {
+	if (arguments.length === 1) {
+		max = min;
 		min = 0;
 	}
 	return Math.round((Math.random() + min) * (max - min));
