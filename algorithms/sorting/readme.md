@@ -6,7 +6,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif"/>
 
 ###Выборкой
-Время работы наилучшее O(n), наихудшее O(n<sup>2</sup>)
+Время работы наилучшее O(n<sup>2</sup>), наихудшее O(n<sup>2</sup>)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif"/>
 
@@ -23,5 +23,8 @@
 
 ###Быстрая
 Время работы наилучшее O(n * lgn), наихудшее O(n<sup>2</sup>)
+- <b>Разделение.</b> Выбирается элемент массива, который называется опорным. Осуществляется перестановка книг так, что элементы слева от опорного меньше его, а справа, больше. 
+- <b>Властвование.</b> Рекурсивно сортируются подмассивы справа и слева от опорного.
+- <b>Объединение.</b> Тут мы ничего не делаем, массив отсортирован.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif"/>
